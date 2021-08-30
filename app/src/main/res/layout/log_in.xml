@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              xmlns:facebook="http://schemas.android.com/apk/res-auto"
+              android:orientation = "vertical"
+              android:layout_width = "match_parent"
+              android:layout_height = "match_parent"
+              android:background = "@color/color_1">
+
+	<LinearLayout android:orientation = "vertical"
+	              android:layout_width = "fill_parent"
+	              android:layout_height = "wrap_content"
+	              android:gravity = "center_horizontal"
+	              android:padding = "10dp"
+	              android:id = "@+id/log_in_header_layout">
+		<TextView android:layout_width = "wrap_content"
+		          android:layout_height = "wrap_content"
+		          android:text = "Log In"
+		          android:id = "@+id/log_in_title_text_view"
+		          android:textSize = "26sp"
+		          android:textColor = "@color/color_2" />
+	</LinearLayout>
+	<ViewSwitcher
+		android:layout_width = "fill_parent"
+		android:layout_height = "fill_parent"
+		android:id = "@+id/log_in_view_switcher">
+		<ScrollView
+			android:layout_width = "fill_parent"
+			android:layout_height = "fill_parent"
+			android:id = "@+id/log_in_scroll_view"
+			android:scrollbarThumbVertical="@drawable/scrollbar_thumb"
+			android:scrollbarTrackVertical="@drawable/scrollbar_track" android:fillViewport = "true">
+			<LinearLayout
+				android:orientation = "vertical"
+				android:layout_width = "fill_parent"
+				android:layout_height = "fill_parent" android:gravity = "center_vertical">
+				<LinearLayout
+					android:orientation = "vertical"
+					android:layout_width = "fill_parent"
+					android:layout_height = "wrap_content" android:layout_margin = "15dp">
+					<LinearLayout
+						android:orientation = "vertical"
+						android:layout_width = "fill_parent"
+						android:layout_height = "wrap_content" android:layout_margin = "15dp">
+						<ImageView
+							android:layout_width = "200dp"
+							android:layout_height = "200dp"
+							android:id = "@+id/imageView" android:layout_gravity = "center" android:background = "@color/color_4" />
+					</LinearLayout>
+					<LinearLayout
+						android:orientation = "vertical"
+						android:layout_width = "fill_parent"
+						android:layout_height = "wrap_content"
+						android:layout_marginTop = "45dp">
+						<LinearLayout
+							android:orientation = "vertical"
+							android:layout_width = "fill_parent"
+							android:layout_height = "wrap_content"
+							android:gravity = "center_horizontal"
+							android:id = "@+id/log_in_button_layout"
+							>
+							<TextView
+								android:layout_width = "fill_parent"
+								android:layout_height = "wrap_content"
+								android:text = "Create Profile"
+								android:id = "@+id/log_in_create_profile_button"
+								android:background = "@drawable/button"
+								android:gravity = "center_vertical|center_horizontal"
+								android:clickable = "false" android:layout_marginBottom = "10dp" />
+							<TextView
+								android:layout_width = "wrap_content"
+								android:layout_height = "wrap_content"
+								android:text = "Or"
+								android:id = "@+id/textView"
+								android:layout_marginTop = "5dp"
+								android:layout_marginBottom = "5dp"
+								android:textColor = "@color/color_2"
+								android:textSize = "12dp"
+								android:textStyle = "italic" />
+							<com.facebook.login.widget.LoginButton
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginTop="5dp"
+								android:layout_gravity="center_horizontal"
+								facebook:com_facebook_confirm_logout="false"
+								facebook:com_facebook_tooltip_mode="never_display" android:id = "@+id/log_in_facebook_log_in_button" />
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+	</ViewSwitcher>
+</LinearLayout>

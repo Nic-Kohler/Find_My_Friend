@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:orientation = "vertical"
+              android:layout_width = "match_parent"
+              android:layout_height = "match_parent"
+              android:background = "@color/color_1">
+	<LinearLayout
+		android:orientation = "horizontal"
+		android:layout_width = "match_parent"
+		android:layout_height = "1dp"
+		android:background = "@color/color_4"
+		android:id = "@+id/settings_top_divider_layout">
+	</LinearLayout>
+	<LinearLayout
+		android:orientation = "vertical"
+		android:layout_width = "fill_parent"
+		android:layout_height = "wrap_content"
+		android:layout_gravity = "center"
+		android:padding = "10dp"
+		android:id = "@+id/settings_header_layout">
+		<TextView
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:textAppearance = "?android:attr/textAppearanceLarge"
+			android:text = "Settings"
+			android:id = "@+id/settings_title_text_view"
+			android:textColor = "@color/color_2"
+			android:layout_gravity = "center"
+			android:textSize = "32sp" />
+	</LinearLayout>
+	<ViewSwitcher
+		android:layout_width = "fill_parent"
+		android:layout_height = "fill_parent"
+		android:id = "@+id/settings_view_switcher" >
+			<ScrollView
+				android:layout_width = "fill_parent"
+				android:layout_height = "fill_parent"
+				android:id = "@+id/settings_scroll_view"
+				android:scrollbarThumbVertical="@drawable/scrollbar_thumb"
+				android:scrollbarTrackVertical="@drawable/scrollbar_track"
+				android:fillViewport = "true"
+				android:paddingLeft = "15dp"
+				android:paddingRight = "15dp"
+				android:paddingBottom = "15dp" >
+				<LinearLayout
+					android:orientation = "vertical"
+					android:layout_width = "fill_parent"
+					android:layout_height = "fill_parent"
+					android:id = "@+id/settings_main_layout" >
+					<LinearLayout
+						android:orientation = "horizontal"
+						android:layout_width = "match_parent"
+						android:layout_height = "wrap_content"
+						android:gravity = "center_vertical"
+						android:id = "@+id/settings_general_button">
+						<View
+							android:layout_width = "60dp"
+							android:layout_height = "60dp"
+							android:id = "@+id/textView"
+							android:background = "@drawable/spanner"
+							android:layout_marginRight = "15dp" />
+						<TextView
+							android:layout_width = "0dp"
+							android:layout_height = "wrap_content"
+							android:text = "General"
+							android:id = "@+id/settings_general_button_text_view"
+							android:textColor = "@color/color_2"
+							android:textSize = "20sp"
+							android:layout_weight = "1" />
+						<LinearLayout
+							android:orientation = "horizontal"
+							android:layout_width = "60dp"
+							android:layout_height = "60dp"
+							android:background = "@drawable/next_arrow">
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout
+						android:orientation = "horizontal"
+						android:layout_width = "match_parent"
+						android:layout_height = "wrap_content"
+						android:layout_marginTop = "15dp"
+						android:gravity = "center_vertical"
+						android:id = "@+id/settings_profile_button">
+						<LinearLayout
+							android:layout_width = "60dp"
+							android:layout_height = "60dp"
+							android:layout_marginRight = "15dp"
+							android:background = "@drawable/profile_pic_background"
+							android:gravity = "center_vertical|center_horizontal">
+							<ImageView
+								android:layout_width = "50dp"
+								android:layout_height = "50dp"
+								android:id = "@+id/settings_profile_pic_image_view" />
+						</LinearLayout>
+						<TextView
+							android:layout_width = "0dp"
+							android:layout_height = "wrap_content"
+							android:text = "Profile"
+							android:id = "@+id/settings_profile_button_text_view"
+							android:textSize = "20dp"
+							android:textColor = "@color/color_2"
+							android:layout_weight = "1" />
+						<LinearLayout android:orientation = "horizontal"
+						              android:layout_width = "60dp"
+						              android:layout_height = "60dp"
+						              android:background = "@drawable/next_arrow"
+						              android:id = "@+id/linearLayout" />
+					</LinearLayout>
+					<LinearLayout
+						android:orientation = "horizontal"
+						android:layout_width = "fill_parent"
+						android:layout_height = "wrap_content"
+						android:gravity = "center_vertical"
+						android:layout_marginTop = "15dp"
+						android:id = "@+id/settings_privacy_button">
+						<LinearLayout
+							android:orientation = "vertical"
+							android:layout_width = "60dp"
+							android:layout_height = "60dp"
+							android:layout_marginRight = "15dp"
+							android:background = "@drawable/privacy">
+						</LinearLayout>
+						<TextView
+							android:layout_width = "0dp"
+							android:layout_height = "wrap_content"
+							android:text = "Privacy"
+							android:id = "@+id/settings_privacy_button_text_view"
+							android:textSize = "20dp"
+							android:textColor = "@color/color_2"
+							android:layout_weight = "1" />
+						<LinearLayout android:orientation = "horizontal"
+						              android:layout_width = "60dp"
+						              android:layout_height = "60dp"
+						              android:background = "@drawable/next_arrow"
+						              android:id = "@+id/linearLayout2" />
+					</LinearLayout>
+					<LinearLayout android:orientation = "horizontal"
+					              android:layout_width = "fill_parent"
+					              android:layout_height = "wrap_content"
+					              android:gravity = "center_vertical"
+					              android:layout_marginTop = "15dp"
+					              android:id = "@+id/settings_invite_friends_button" >
+						<LinearLayout android:orientation = "vertical"
+						              android:layout_width = "60dp"
+						              android:layout_height = "60dp"
+						              android:layout_marginRight = "15dp"
+						              android:background = "@drawable/invite_friends" />
+						<TextView android:layout_width = "0dp"
+						          android:layout_height = "wrap_content"
+						          android:text = "Invite Friends"
+						          android:id = "@+id/settings_invite_friends_button_text_view"
+						          android:textSize = "20dp"
+						          android:textColor = "@color/color_2"
+						          android:layout_weight = "1" />
+					</LinearLayout>
+				</LinearLayout>
+			</ScrollView>
+	</ViewSwitcher>
+</LinearLayout>

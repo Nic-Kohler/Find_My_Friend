@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:orientation = "vertical"
+              android:layout_width = "match_parent"
+              android:layout_height = "match_parent"
+              android:background = "@color/color_1">
+
+	<LinearLayout android:orientation = "vertical"
+	              android:layout_width = "fill_parent"
+	              android:layout_height = "wrap_content"
+	              android:gravity = "center_horizontal"
+	              android:padding = "10dp"
+	              android:id = "@+id/settings_profile_header_layout">
+		<TextView android:layout_width = "wrap_content"
+		          android:layout_height = "wrap_content"
+		          android:text = "Profile"
+		          android:id = "@+id/settings_profile_title_text_view"
+		          android:textSize = "26sp"
+		          android:textColor = "@color/color_2" />
+	</LinearLayout>
+	<ViewSwitcher
+		android:layout_width = "fill_parent"
+		android:layout_height = "fill_parent"
+		android:id = "@+id/settings_profile_view_switcher">
+		<ScrollView
+			android:layout_width = "fill_parent"
+			android:layout_height = "fill_parent"
+			android:id = "@+id/settings_profile_scroll_view"
+			android:scrollbarThumbVertical="@drawable/scrollbar_thumb"
+			android:scrollbarTrackVertical="@drawable/scrollbar_track"
+			android:fillViewport = "true">
+			<LinearLayout
+				android:orientation = "vertical"
+				android:layout_width = "fill_parent"
+				android:layout_height = "fill_parent"
+				android:padding = "15dp">
+				<LinearLayout
+					android:orientation = "vertical"
+					android:layout_width = "fill_parent"
+					android:layout_height = "wrap_content" android:layout_weight = "1">
+					<LinearLayout android:orientation = "vertical"
+					              android:layout_width = "fill_parent"
+					              android:layout_height = "wrap_content"
+					              android:gravity = "bottom"
+					              android:id = "@+id/linearLayout2" >
+						<LinearLayout android:orientation = "vertical"
+						              android:layout_width = "fill_parent"
+						              android:layout_height = "wrap_content"
+						              android:gravity = "center_horizontal"
+						              android:id = "@+id/linearLayout5"
+						              android:paddingLeft = "15dp"
+						              android:paddingRight = "15dp">
+							<EditText
+								android:layout_width = "fill_parent"
+								android:layout_height = "wrap_content"
+								android:inputType = "textPersonName"
+								android:hint="Name"
+								android:ems = "10"
+								android:id = "@+id/settings_profile_name_edit_text"
+								android:textColor = "@color/color_2"
+								android:textColorHint = "@color/color_3"
+								android:background = "@drawable/tab_widget_unselected" />
+							<EditText android:layout_width = "fill_parent"
+							          android:layout_height = "wrap_content"
+							          android:inputType = "textPersonName"
+							          android:ems = "10"
+							          android:id = "@+id/settings_profile_surname_edit_text"
+							          android:hint = "Surname"
+							          android:textColor = "@color/color_2"
+							          android:textColorHint = "@color/color_3"
+							          android:background = "@drawable/tab_widget_unselected"
+							          android:paddingTop = "10dp" />
+							<EditText android:layout_width = "fill_parent"
+							          android:layout_height = "wrap_content"
+							          android:inputType = "textPersonName"
+							          android:ems = "10"
+							          android:id = "@+id/settings_profile_email_edit_text"
+							          android:hint = "Email Address"
+							          android:textColor = "@color/color_2"
+							          android:textColorHint = "@color/color_3"
+							          android:background = "@drawable/tab_widget_unselected"
+							          android:paddingTop = "10dp" />
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout
+						android:orientation = "vertical"
+						android:layout_width = "fill_parent"
+						android:layout_height = "fill_parent">
+						<LinearLayout
+							android:orientation = "vertical"
+							android:layout_width = "fill_parent"
+							android:layout_height = "wrap_content"
+							android:layout_marginTop = "40dp"
+							android:id = "@+id/settings_profile_profile_pic_layout"
+							android:paddingLeft = "15dp"
+							android:paddingRight = "15dp" android:gravity = "center_horizontal">
+							<LinearLayout android:orientation = "vertical"
+							              android:layout_width = "160dp"
+							              android:layout_height = "160dp"
+							              android:gravity = "center_vertical|center_horizontal"
+							              android:background = "@drawable/profile_pic_background" >
+								<ImageView android:layout_width = "150dp"
+								           android:layout_height = "150dp"
+								           android:id = "@+id/settings_profile_profile_pic_image_view"
+								           android:scaleType = "fitXY" />
+							</LinearLayout>
+							<TextView
+								android:layout_width = "fill_parent"
+								android:layout_height = "wrap_content"
+								android:text = "Select Image"
+								android:id = "@+id/settings_profile_select_image_button"
+								android:background = "@drawable/button"
+								android:gravity = "center_vertical|center_horizontal"
+								android:layout_marginTop = "30dp" android:clickable = "false" />
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+				<TextView
+					android:layout_width = "fill_parent"
+					android:layout_height = "wrap_content"
+					android:text = "Done"
+					android:id = "@+id/settings_profile_done_button" android:background = "@drawable/button" android:gravity = "center_vertical|center_horizontal"
+					android:layout_alignParentEnd = "false" android:layout_alignParentBottom = "true" />
+			</LinearLayout>
+		</ScrollView>
+	</ViewSwitcher>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<LinearLayout
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:orientation = "vertical"
+	android:layout_width = "fill_parent"
+	android:layout_height = "fill_parent"
+	android:background = "@color/color_1"
+	android:paddingBottom = "15dp"
+	android:paddingRight = "15dp"
+	android:paddingLeft = "15dp">
+	<TextView
+		android:layout_width = "fill_parent"
+		android:layout_height = "wrap_content"
+		android:text = "Position and Resize Picture"
+		android:id = "@+id/pp_editor_title_text_view"
+		android:textColor = "@color/color_2"
+		android:gravity = "center_vertical|center_horizontal"
+		android:layout_marginTop = "15dp" />
+	<RelativeLayout
+		android:layout_width = "fill_parent"
+		android:layout_height = "fill_parent"
+		android:id = "@+id/pp_editor_main_layout"
+		android:layout_weight = "1"
+		android:clipChildren = "false" android:layout_marginLeft = "10dp" android:layout_marginRight = "10dp">
+		<LinearLayout
+			android:orientation = "vertical"
+			android:layout_width = "fill_parent"
+			android:layout_height = "wrap_content" android:padding = "5dp" android:background = "@color/color_4" android:id = "@+id/pp_editor_border_layout">
+			<WebView
+				android:layout_width = "fill_parent"
+				android:layout_height = "fill_parent"
+				android:id = "@+id/pp_editor_web_view" />
+		</LinearLayout>
+	</RelativeLayout>
+	<TextView
+		android:layout_width = "fill_parent"
+		android:layout_height = "wrap_content"
+		android:text = "Done"
+		android:id = "@+id/pp_editor_done_button"
+		android:background = "@drawable/button"
+		android:gravity = "center_vertical|center_horizontal"
+		/>
+</LinearLayout>

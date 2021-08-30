@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:orientation = "vertical"
+              android:layout_width = "fill_parent"
+              android:layout_height = "fill_parent"
+              android:background = "@color/color_1">
+	<RelativeLayout
+		android:orientation = "vertical"
+		android:layout_width = "fill_parent"
+		android:layout_height = "wrap_content"
+		android:padding = "10dp"
+		android:gravity = "center_vertical"
+		android:id = "@+id/main_header_layout">
+		<RelativeLayout
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:id = "@+id/main_button_layout"
+			android:layout_marginLeft = "5dp"
+			android:layout_centerVertical = "true">
+			<LinearLayout
+				android:orientation = "vertical"
+				android:layout_width = "wrap_content"
+				android:layout_height = "wrap_content"
+				android:background = "@drawable/menu"
+				android:id = "@+id/main_menu_button"
+				>
+			</LinearLayout>
+			<LinearLayout android:orientation = "vertical"
+			              android:layout_width = "wrap_content"
+			              android:layout_height = "wrap_content"
+			              android:background = "@drawable/back"
+			              android:id = "@+id/main_back_button" />
+		</RelativeLayout>
+		<TextView
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:textAppearance = "?android:attr/textAppearanceLarge"
+			android:text = "@string/app_name"
+			android:id = "@+id/main_title_text_view"
+			android:textColor = "@color/color_2"
+			android:layout_gravity = "center"
+			android:textSize = "34sp"
+			android:layout_centerInParent = "true" />
+		<TextView
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:text = "!"
+			android:id = "@+id/main_network_error_text_view"
+			android:layout_centerVertical = "true"
+			android:layout_alignParentEnd = "true"
+			android:layout_marginRight = "5dp"
+			android:textColor = "@color/color_4"
+			android:background = "@drawable/network_error"
+			android:gravity = "center_vertical|center_horizontal"
+			android:paddingTop = "2dp" />
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_width = "fill_parent"
+		android:layout_height = "fill_parent"
+		android:id = "@+id/main_content_layout">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_frame_layout">
+        </FrameLayout>
+
+    </RelativeLayout>
+</LinearLayout>

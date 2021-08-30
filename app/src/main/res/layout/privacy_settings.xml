@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:orientation = "vertical"
+              android:layout_width = "match_parent"
+              android:layout_height = "match_parent"
+              android:background = "@color/color_1">
+	<LinearLayout android:orientation = "vertical"
+	              android:layout_width = "fill_parent"
+	              android:layout_height = "wrap_content"
+	              android:gravity = "center_horizontal"
+	              android:padding = "10dp"
+	              android:id = "@+id/settings_privacy_header_layout">
+		<TextView android:layout_width = "wrap_content"
+		          android:layout_height = "wrap_content"
+		          android:text = "Privacy"
+		          android:id = "@+id/settings_privacy_title_text_view"
+		          android:textSize = "26sp"
+		          android:textColor = "@color/color_2" />
+	</LinearLayout>
+	<ScrollView
+		android:layout_width = "fill_parent"
+		android:layout_height = "fill_parent"
+		android:id = "@+id/scrollView"
+		android:scrollbarThumbVertical="@drawable/scrollbar_thumb"
+		android:scrollbarTrackVertical="@drawable/scrollbar_track">
+		<LinearLayout
+			android:orientation = "vertical"
+			android:layout_width = "fill_parent"
+			android:layout_height = "fill_parent"
+			android:padding = "15dp">
+			<LinearLayout android:orientation = "vertical"
+			              android:layout_width = "fill_parent"
+			              android:layout_height = "wrap_content"
+			              android:layout_marginTop = "15dp"
+			              android:id = "@+id/linearLayout3" >
+				<TextView android:layout_width = "fill_parent"
+				          android:layout_height = "wrap_content"
+				          android:text = "Blocked Users"
+				          android:id = "@+id/settings_privacy_blocked_users_label"
+				          android:textColor = "@color/color_2" />
+				<TextView android:layout_width = "wrap_content"
+				          android:layout_height = "wrap_content"
+				          android:id = "@+id/settings_privacy_blocked_users_help"
+				          android:textColor = "@color/color_2"
+				          android:layout_marginLeft = "15dp"
+				          android:layout_marginRight = "15dp"
+				          android:text = "Users can be blocked from the main screen by tapping and holding a User or Friend's profile." />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation = "vertical"
+				android:layout_width = "fill_parent"
+				android:layout_height = "wrap_content"
+				android:id = "@+id/settings_privacy_blocked_users_layout"
+				android:layout_marginTop = "15dp">
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

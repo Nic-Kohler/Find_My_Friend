@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:orientation = "vertical"
+              android:layout_width = "match_parent"
+              android:layout_height = "match_parent"
+              android:background = "#dddddd">
+	<LinearLayout
+		android:orientation = "vertical"
+		android:layout_width = "fill_parent"
+		android:layout_height = "wrap_content"
+		android:gravity = "center_horizontal"
+		android:padding = "10dp"
+		android:id = "@+id/settings_general_header_layout">
+		<TextView
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:text = "General"
+			android:id = "@+id/settings_general_title_text_view"
+			android:textSize = "26sp"
+			android:textColor = "@color/color_2" />
+	</LinearLayout>
+	<ScrollView
+		android:layout_width = "fill_parent"
+		android:layout_height = "fill_parent"
+		android:id = "@+id/scrollView"
+		android:scrollbarThumbVertical="@drawable/scrollbar_thumb"
+		android:scrollbarTrackVertical="@drawable/scrollbar_track">
+		<LinearLayout
+			android:orientation = "vertical"
+			android:layout_width = "fill_parent"
+			android:layout_height = "fill_parent"
+			android:padding = "15dp">
+			<LinearLayout android:orientation = "horizontal"
+			              android:layout_width = "fill_parent"
+			              android:layout_height = "wrap_content"
+			              android:layout_marginTop = "15dp"
+			              android:gravity = "bottom"
+			              android:id = "@+id/linearLayout">
+				<TextView android:layout_width = "0dp"
+				          android:layout_height = "wrap_content"
+				          android:text = "Run In Background"
+				          android:id = "@+id/settings_run_in_background_label_text_view"
+				          android:textColor = "@color/color_2"
+				          android:layout_weight = "1" />
+				<CheckBox
+					android:layout_width = "wrap_content"
+					android:layout_height = "wrap_content"
+					android:id = "@+id/settings_run_in_background_check_box"
+					android:button = "@null"
+					android:background = "@drawable/check_box_style"
+					android:checked = "false" />
+			</LinearLayout>
+			<LinearLayout android:orientation = "vertical"
+			              android:layout_width = "fill_parent"
+			              android:layout_height = "wrap_content"
+			              android:layout_marginTop = "15dp"
+			              android:gravity = "bottom"
+			              android:id = "@+id/linearLayout6" >
+				<LinearLayout
+					android:orientation = "horizontal"
+					android:layout_width = "fill_parent"
+					android:layout_height = "wrap_content">
+					<TextView android:layout_width = "0dp"
+					          android:layout_height = "wrap_content"
+					          android:text = "Display Navigation Buttons"
+					          android:id = "@+id/settings_display_navigation_buttons_label_text_view"
+					          android:textColor = "@color/color_2"
+					          android:layout_weight = "1" />
+					<CheckBox android:layout_width = "wrap_content"
+					          android:layout_height = "wrap_content"
+					          android:id = "@+id/settings_display_navigation_buttons_check_box"
+					          android:button = "@null"
+					          android:background = "@drawable/check_box_style"
+					          android:checked = "false" />
+				</LinearLayout>
+				<TextView
+					android:layout_width = "wrap_content"
+					android:layout_height = "wrap_content"
+					android:text = "Navigation buttons perform the same operations as native Menu and Back Buttons, as well as Swipe Functionality."
+					android:id = "@+id/settings_display_navigation_button_help_label"
+					android:textColor = "@color/color_2"
+					android:layout_marginLeft = "15dp"
+					android:layout_marginRight = "15dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width = "fill_parent"
+				android:layout_height = "wrap_content"
+				android:layout_marginTop = "15dp"
+				android:orientation = "horizontal">
+				<TextView
+					android:layout_width = "0dp"
+					android:layout_height = "wrap_content"
+					android:id = "@+id/settings_range_measurement_label_text_view"
+					android:text = "Measurement System"
+					android:textColor = "@color/color_2"
+					android:layout_marginTop = "5dp"
+					android:layout_weight = "1" />
+				<LinearLayout
+					android:orientation = "vertical"
+					android:layout_width = "wrap_content"
+					android:layout_height = "wrap_content"
+					android:layout_alignParentRight = "true"
+					android:id = "@+id/settings_measurement_system_radio_group"
+					android:gravity = "right">
+					<LinearLayout
+						android:orientation = "horizontal"
+						android:layout_width = "wrap_content"
+						android:layout_height = "wrap_content"
+						android:gravity = "center_vertical">
+						<TextView
+							android:layout_width = "wrap_content"
+							android:layout_height = "wrap_content"
+							android:text = "Meters"
+							android:id = "@+id/meters_radio_button_label"
+							android:layout_marginRight = "15dp"
+							android:textColor = "@color/color_2" />
+						<RadioButton
+							android:layout_width = "wrap_content"
+							android:layout_height = "wrap_content"
+							android:id = "@+id/meters_radio_button"
+							android:textColor = "@color/color_2"
+							android:background = "@drawable/radio_button_style"
+							android:button = "@null" />
+					</LinearLayout>
+					<LinearLayout
+						android:orientation = "horizontal"
+						android:layout_width = "wrap_content"
+						android:layout_height = "wrap_content"
+						android:layout_marginTop = "10dp"
+						android:gravity = "center_vertical">
+						<TextView
+							android:layout_width = "wrap_content"
+							android:layout_height = "wrap_content"
+							android:text = "Feet"
+							android:id = "@+id/feet_radio_button_label"
+							android:layout_marginRight = "15dp"
+							android:textColor = "@color/color_2" />
+						<RadioButton
+							android:layout_width = "wrap_content"
+							android:layout_height = "wrap_content"
+							android:id = "@+id/feet_radio_button"
+							android:textColor = "@color/color_2"
+							android:background = "@drawable/radio_button_style"
+							android:button = "@null" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:orientation = "horizontal"
+				android:layout_width = "fill_parent"
+				android:layout_height = "wrap_content"
+				android:layout_marginTop = "15dp"
+				android:gravity = "bottom">
+				<TextView
+					android:layout_width = "0dp"
+					android:layout_height = "wrap_content"
+					android:text = "Maximun Range"
+					android:id = "@+id/settings_range_max_label_text_view"
+					android:textColor = "@color/color_2" android:layout_weight = "1" />
+				<EditText
+					android:layout_width = "60dp"
+					android:layout_height = "wrap_content"
+					android:id = "@+id/settings_range_max_edit_text"
+					android:background = "@drawable/tab_widget_unselected"
+					android:layout_toLeftOf = "@+id/settings_range_max_measurement_label_text_view"
+					android:textColor = "@color/color_2"
+					android:layout_marginRight = "5dp"
+					android:gravity = "right"
+					android:inputType = "numberDecimal" />
+				<TextView
+					android:layout_width = "wrap_content"
+					android:layout_height = "wrap_content"
+					android:text = "Meters"
+					android:id = "@+id/settings_range_max_measurement_label_text_view"
+					android:layout_alignParentEnd = "true"
+					android:textColor = "@color/color_2" android:layout_alignParentBottom = "false" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation = "vertical"
+				android:layout_width = "fill_parent"
+				android:layout_height = "wrap_content"
+				android:layout_marginTop = "15dp">
+				<LinearLayout android:orientation = "horizontal"
+				              android:layout_width = "fill_parent"
+				              android:layout_height = "wrap_content"
+				              android:gravity = "bottom"
+				              android:id = "@+id/linearLayout3">
+					<TextView android:layout_width = "0dp"
+					          android:layout_height = "wrap_content"
+					          android:text = "Location Update Interval"
+					          android:id = "@+id/settings_location_update_interval_label_text_view"
+					          android:textColor = "@color/color_2"
+					          android:layout_weight = "1" />
+					<TextView
+						android:layout_width = "wrap_content"
+						android:layout_height = "wrap_content"
+						android:text = " Minutes"
+						android:id = "@+id/settings_location_update_interval_minute_text_view"
+						android:textColor = "@color/color_2" />
+					<TextView android:layout_width = "wrap_content"
+					          android:layout_height = "wrap_content"
+					          android:text = "Seconds"
+					          android:id = "@+id/settings_location_update_interval_second_text_view"
+					          android:layout_alignParentEnd = "true"
+					          android:textColor = "@color/color_2"
+					          android:layout_alignParentBottom = "false"
+					          android:layout_marginLeft = "5dp" />
+				</LinearLayout>
+				<SeekBar android:layout_width = "fill_parent"
+				         android:layout_height = "wrap_content"
+				         android:id = "@+id/settings_location_update_interval_seek_bar"
+				         android:progressDrawable = "@drawable/seekbar_style"
+				         android:progress = "50"
+				         android:thumb = "@drawable/seekbar_thumb" />
+				<LinearLayout
+					android:orientation = "horizontal"
+					android:layout_width = "fill_parent"
+					android:layout_height = "wrap_content"
+					android:paddingLeft = "15dp"
+					android:paddingRight = "15dp">
+					<TextView
+						android:layout_width = "0dp"
+						android:layout_height = "wrap_content"
+						android:text = "Accuracy High"
+						android:id = "@+id/settings_location_accuracy_high_label"
+						android:textColor = "@color/color_2"
+						android:layout_weight = "1" />
+					<TextView
+						android:layout_width = "wrap_content"
+						android:layout_height = "wrap_content"
+						android:text = "Battery Usage Low"
+						android:id = "@+id/settings_location_battery_usage_low_label"
+						android:textColor = "@color/color_2" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation = "vertical"
+			              android:layout_width = "fill_parent"
+			              android:layout_height = "wrap_content"
+			              android:layout_marginTop = "15dp"
+			              android:id = "@+id/linearLayout5">
+				<LinearLayout android:orientation = "horizontal"
+				              android:layout_width = "fill_parent"
+				              android:layout_height = "wrap_content"
+				              android:gravity = "bottom"
+				              android:id = "@+id/linearLayout4" >
+					<TextView android:layout_width = "0dp"
+					          android:layout_height = "wrap_content"
+					          android:text = "User Update Interval"
+					          android:id = "@+id/settings_user_update_interval_label_text_view"
+					          android:textColor = "@color/color_2"
+					          android:layout_weight = "1" />
+					<TextView android:layout_width = "wrap_content"
+					          android:layout_height = "wrap_content"
+					          android:text = " Minutes"
+					          android:id = "@+id/settings_user_update_interval_minute_text_view"
+					          android:textColor = "@color/color_2" />
+					<TextView android:layout_width = "wrap_content"
+					          android:layout_height = "wrap_content"
+					          android:text = "Seconds"
+					          android:id = "@+id/settings_user_update_interval_second_text_view"
+					          android:layout_alignParentEnd = "true"
+					          android:textColor = "@color/color_2"
+					          android:layout_alignParentBottom = "false"
+					          android:layout_marginLeft = "5dp" />
+				</LinearLayout>
+				<SeekBar android:layout_width = "fill_parent"
+				         android:layout_height = "wrap_content"
+				         android:id = "@+id/settings_user_update_interval_seek_bar"
+				         android:progressDrawable = "@drawable/seekbar_style"
+				         android:progress = "50"
+				         android:thumb = "@drawable/seekbar_thumb" />
+				<LinearLayout android:orientation = "horizontal"
+				              android:layout_width = "fill_parent"
+				              android:layout_height = "wrap_content"
+				              android:paddingLeft = "15dp"
+				              android:paddingRight = "15dp" >
+					<TextView android:layout_width = "0dp"
+					          android:layout_height = "wrap_content"
+					          android:text = "Accuracy High"
+					          android:id = "@+id/settings_user_accuracy_high_label"
+					          android:textColor = "@color/color_2"
+					          android:layout_weight = "1" />
+					<TextView android:layout_width = "wrap_content"
+					          android:layout_height = "wrap_content"
+					          android:text = "Battery Usage Low"
+					          android:id = "@+id/settings_user_battery_low_label"
+					          android:textColor = "@color/color_2" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

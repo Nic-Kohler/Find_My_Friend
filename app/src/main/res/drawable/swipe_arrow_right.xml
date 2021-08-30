@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:top="0dp" android:left="0dp" android:bottom="0dp" android:right="0dp">
+		<shape android:shape="rectangle">
+			<size android:width="60dp"
+			      android:height="30dp" />
+		</shape>
+	</item>
+	<item android:top="14dp" android:left="0dp" android:bottom="14dp" android:right="3dp">
+			<shape android:shape="rectangle">
+				<gradient android:startColor="@color/color_3"
+				          android:endColor="#008888DD"
+					      android:angle="180"
+					      android:type="linear"/>
+				<corners android:radius="3dp" />
+			</shape>
+	</item>
+	<item android:top="15dp" android:left="57dp" android:bottom="0dp" android:right="0dp">
+		<rotate
+			android:fromDegrees="45"
+			android:toDegrees="45"
+			android:pivotX="100%"
+			android:pivotY="0%" >
+			<shape android:shape="rectangle">
+				<solid android:color="@color/color_3" />
+				<corners android:radius="3dp" />
+			</shape>
+		</rotate>
+	</item>
+		<item android:top="0dp" android:left="57dp" android:bottom="15dp" android:right="0dp">
+		<rotate
+			android:fromDegrees="-45"
+			android:toDegrees="-45"
+			android:pivotX="100%"
+			android:pivotY="100%" >
+			<shape android:shape="rectangle">
+				<solid android:color="@color/color_3" />
+				<corners android:radius="3dp" />
+			</shape>
+		</rotate>
+	</item>
+	<item android:top="15dp" android:left="57dp" android:bottom="10dp" android:right="0dp">
+		<rotate
+			android:fromDegrees="45"
+			android:toDegrees="45"
+			android:pivotX="100%"
+			android:pivotY="0%" >
+			<shape android:shape="rectangle">
+				<solid android:color="@color/color_3" />
+			</shape>
+		</rotate>
+	</item>
+</layer-list>

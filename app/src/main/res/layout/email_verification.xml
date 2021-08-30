@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:orientation = "vertical"
+              android:layout_width = "match_parent"
+              android:layout_height = "match_parent"
+              android:background = "@color/color_1">
+
+	<LinearLayout android:orientation = "vertical"
+	              android:layout_width = "fill_parent"
+	              android:layout_height = "wrap_content"
+	              android:gravity = "center_horizontal"
+	              android:padding = "10dp"
+	              android:id = "@+id/email_verification_header_layout">
+		<TextView android:layout_width = "wrap_content"
+		          android:layout_height = "wrap_content"
+		          android:text = "Email Verification"
+		          android:id = "@+id/email_verification_title_text_view"
+		          android:textSize = "26sp"
+		          android:textColor = "@color/color_2" />
+	</LinearLayout>
+	<ViewSwitcher
+		android:layout_width = "fill_parent"
+		android:layout_height = "fill_parent"
+		android:id = "@+id/email_verification_view_switcher">
+		<ScrollView
+			android:layout_width = "fill_parent"
+			android:layout_height = "fill_parent"
+			android:id = "@+id/email_verification_scroll_view"
+			android:scrollbarThumbVertical="@drawable/scrollbar_thumb"
+			android:scrollbarTrackVertical="@drawable/scrollbar_track"
+			android:fillViewport = "true">
+			<LinearLayout
+				android:orientation = "vertical"
+				android:layout_width = "fill_parent"
+				android:layout_height = "fill_parent"
+				android:padding = "15dp">
+				<LinearLayout
+					android:orientation = "vertical"
+					android:layout_width = "fill_parent"
+					android:layout_height = "wrap_content" android:layout_weight = "1" android:gravity = "center_vertical">
+					<LinearLayout
+						android:orientation = "vertical"
+						android:layout_width = "fill_parent"
+						android:layout_height = "wrap_content" android:layout_margin = "15dp">
+						<LinearLayout
+							android:orientation = "vertical"
+							android:layout_width = "fill_parent"
+							android:layout_height = "wrap_content"
+							android:layout_marginTop = "40dp"
+							android:id = "@+id/email_verification_logo_layout"
+							android:paddingLeft = "15dp"
+							android:paddingRight = "15dp" android:gravity = "center_horizontal">
+							<LinearLayout android:orientation = "vertical"
+							              android:layout_width = "160dp"
+							              android:layout_height = "160dp"
+							              android:gravity = "center_vertical|center_horizontal"
+							              android:background = "@drawable/profile_pic_background" >
+								<ImageView android:layout_width = "150dp"
+								           android:layout_height = "150dp"
+								           android:id = "@+id/email_verification_logo_image_view"
+								           android:scaleType = "fitXY" />
+							</LinearLayout>
+						</LinearLayout>
+						<LinearLayout
+							android:orientation = "vertical"
+							android:layout_width = "fill_parent"
+							android:layout_height = "wrap_content" android:gravity = "center_horizontal">
+							<EditText
+								android:layout_width = "130dp"
+								android:layout_height = "wrap_content"
+								android:inputType = "textPersonName"
+								android:hint="Your Code"
+								android:ems = "10"
+								android:id = "@+id/email_verification_code_edit_text"
+								android:textColor = "@color/color_2"
+								android:textColorHint = "@color/color_3"
+								android:background = "@drawable/tab_widget_unselected" android:layout_marginTop = "30dp" android:gravity = "center_horizontal" />
+						</LinearLayout>
+						<TextView android:layout_width = "fill_parent" android:layout_height = "wrap_content" android:text = "Resend Code" android:id = "@+id/email_verification_resend_button"
+						          android:background = "@drawable/button" android:gravity = "center_vertical|center_horizontal" android:layout_alignParentEnd = "false"
+						          android:layout_alignParentBottom = "true" android:layout_marginTop = "30dp" />
+					</LinearLayout>
+				</LinearLayout>
+				<TextView
+					android:layout_width = "fill_parent"
+					android:layout_height = "wrap_content"
+					android:text = "Done"
+					android:id = "@+id/email_verification_done_button" android:background = "@drawable/button" android:gravity = "center_vertical|center_horizontal"
+					android:layout_alignParentEnd = "false" android:layout_alignParentBottom = "true" />
+			</LinearLayout>
+		</ScrollView>
+	</ViewSwitcher>
+</LinearLayout>

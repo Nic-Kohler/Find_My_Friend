@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:orientation = "vertical"
+              android:layout_width = "match_parent"
+              android:layout_height = "match_parent">
+
+    <LinearLayout
+        android:orientation = "vertical"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:gravity = "center_vertical|center_horizontal"
+        android:padding = "15dp">
+        <LinearLayout
+            android:orientation = "vertical"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:gravity = "center_horizontal">
+            <LinearLayout
+                android:orientation = "vertical"
+                android:layout_width = "150dp"
+                android:layout_height = "150dp"
+                android:gravity = "center_vertical|center_horizontal"
+                android:background = "@drawable/profile_pic_background">
+                <ImageView
+                    android:layout_width = "140dp"
+                    android:layout_height = "140dp"
+                    android:id = "@+id/friend_profile_pic_image_view"
+                    android:scaleType = "fitCenter" />
+            </LinearLayout>
+            <TextView
+android:layout_width = "wrap_content"
+android:layout_height = "wrap_content"
+android:text = "User Name"
+android:id = "@+id/friend_name_text_view" android:textColor = "#222222" android:textSize = "18sp" android:layout_marginTop = "10dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "is no longer in range."
+            android:id = "@+id/friend_not_in_range_text_view"
+            android:layout_marginTop = "20dp"
+            android:textColor = "@color/color_2"
+            android:textSize = "18dp" />
+        <LinearLayout
+            android:orientation = "vertical"
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:padding = "5dp"
+            android:id = "@+id/friend_google_map_layout"
+            android:background = "@color/color_4"
+            android:layout_marginTop = "20dp"
+            android:layout_marginRight = "10dp"
+            android:layout_marginLeft = "10dp">
+            <fragment xmlns:android = "http://schemas.android.com/apk/res/android"
+                      android:name="com.unscarred.find_my_friend.UI.CustomElements.CustomSupportMapFragment"
+                      android:id="@+id/friend_google_map"
+                      android:layout_width="fill_parent"
+                      android:layout_height="30dp">
+            </fragment>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation = "vertical"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/friend_in_range_layout"
+            android:layout_marginTop = "20dp"
+            android:gravity = "center_horizontal">
+            <LinearLayout
+                android:orientation = "vertical"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:gravity = "center_vertical|center_horizontal">
+                <TextView
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "50 Meters"
+                    android:id = "@+id/friend_distance_text_view"
+                    android:textSize = "18sp"
+                    android:textColor = "#222222" />
+                <TextView android:layout_width = "wrap_content"
+                          android:layout_height = "wrap_content"
+                          android:text = "50 Meters"
+                          android:id = "@+id/friend_altitude_text_view"
+                          android:textSize = "18sp"
+                          android:textColor = "#222222"
+                          android:layout_marginTop = "10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation = "horizontal"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "20dp"
+                android:gravity = "center_vertical">
+
+<TextView
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text = "Poke"
+                    android:id = "@+id/friend_poke_button"
+                    android:background = "@drawable/poke_unselected"
+                    android:gravity = "center_vertical|center_horizontal"
+                    android:textColor = "@color/color_3"
+    />
+</LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

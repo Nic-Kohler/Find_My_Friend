@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:orientation = "vertical"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@color/color_1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friends"
+                android:id="@+id/friends_tab_header_text_view"
+                android:textColor="@color/color_2"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/friends_tab_add_image_view"
+            android:src="@drawable/abc_btn_check_to_on_mtrl_000"
+            />
+    </LinearLayout>
+
+    <ScrollView android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:fillViewport="true"
+                android:scrollbarThumbVertical="@drawable/scrollbar_thumb"
+                android:scrollbarTrackVertical="@drawable/scrollbar_track"
+                android:id = "@+id/friends_tab_scroll_view">
+
+        <LinearLayout android:orientation = "vertical"
+                      android:layout_width = "match_parent"
+                      android:layout_height = "match_parent"
+                      android:id = "@+id/friends_tab_items_layout"
+                      android:gravity = "center_horizontal" >
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+            android:orientation = "vertical"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:background = "@color/color_1">
+		<ScrollView xmlns:android = "http://schemas.android.com/apk/res/android"
+		            android:orientation = "vertical"
+		            android:layout_width = "match_parent"
+		            android:layout_height = "match_parent"
+		            android:id = "@+id/settings_theme_scroll_view"
+		            android:fillViewport = "false">
+			<LinearLayout android:orientation = "vertical"
+			              android:layout_width = "match_parent"
+			              android:layout_height = "wrap_content"
+			              android:paddingLeft = "15dp"
+			              android:paddingRight = "15dp"
+			              android:paddingBottom = "15dp">
+
+			<LinearLayout android:orientation = "vertical"
+			              android:layout_width = "fill_parent"
+			              android:layout_height = "wrap_content"
+			              android:gravity = "center_horizontal"
+			              android:padding = "10dp"
+			              android:id = "@+id/linearLayout">
+				<TextView android:layout_width = "wrap_content"
+				          android:layout_height = "wrap_content"
+				          android:text = "Theme"
+				          android:id = "@+id/settings_theme_title_text_view"
+				          android:textSize = "26sp"
+				          android:textColor = "@color/color_2" />
+			</LinearLayout>
+			<LinearLayout android:orientation = "horizontal"
+			              android:layout_width = "fill_parent"
+			              android:layout_height = "wrap_content"
+			              android:layout_marginTop = "15dp"
+			              android:gravity = "bottom"
+			              android:id = "@+id/linearLayout2" >
+				<TextView android:layout_width = "wrap_content"
+				          android:layout_height = "wrap_content"
+				          android:text = "Color 1"
+				          android:id = "@+id/settings_theme_color_1_label"
+				          android:textColor = "@color/color_2"
+				          android:layout_weight = "1" />
+				<LinearLayout
+					android:orientation = "vertical"
+					android:layout_width = "30dp"
+					android:layout_height = "30dp"
+					android:layout_marginRight = "15dp"
+					android:gravity = "center_vertical|center_horizontal"
+					android:background = "@color/color_4">
+					<LinearLayout
+						android:orientation = "vertical"
+						android:layout_width = "24dp"
+						android:layout_height = "24dp"
+						android:background = "@color/color_1"
+						android:id = "@+id/settings_theme_color_1">
+					</LinearLayout>
+				</LinearLayout>
+				<RadioButton
+					android:layout_width = "wrap_content"
+					android:layout_height = "wrap_content"
+					android:id = "@+id/settings_theme_color_1_radio_button"
+					android:button = "@null"
+					android:background = "@drawable/radio_button_style" />
+			</LinearLayout>
+			<LinearLayout android:orientation = "horizontal"
+			              android:layout_width = "fill_parent"
+			              android:layout_height = "wrap_content"
+			              android:layout_marginTop = "15dp"
+			              android:gravity = "bottom"
+			              android:id = "@+id/linearLayout4" >
+				<TextView android:layout_width = "0dp"
+				          android:layout_height = "wrap_content"
+				          android:text = "Color 2"
+				          android:id = "@+id/settings_theme_color_2_label"
+				          android:textColor = "@color/color_2"
+				          android:layout_weight = "1" />
+				<LinearLayout android:orientation = "vertical"
+				              android:layout_width = "30dp"
+				              android:layout_height = "30dp"
+				              android:layout_marginRight = "15dp"
+				              android:gravity = "center_vertical|center_horizontal"
+				              android:background = "@color/color_4" >
+					<LinearLayout android:orientation = "vertical"
+					              android:layout_width = "24dp"
+					              android:layout_height = "24dp"
+					              android:background = "@color/color_2"
+					              android:id = "@+id/settings_theme_color_2" />
+				</LinearLayout>
+				<RadioButton android:layout_width = "wrap_content"
+				             android:layout_height = "wrap_content"
+				             android:id = "@+id/settings_theme_color_2_radio_button"
+				             android:button = "@null"
+				             android:background = "@drawable/radio_button_style" />
+			</LinearLayout>
+			<LinearLayout android:orientation = "horizontal"
+			              android:layout_width = "fill_parent"
+			              android:layout_height = "wrap_content"
+			              android:layout_marginTop = "15dp"
+			              android:gravity = "bottom"
+			              android:id = "@+id/linearLayout6" >
+				<TextView android:layout_width = "0dp"
+				          android:layout_height = "wrap_content"
+				          android:text = "Color 3"
+				          android:id = "@+id/settings_theme_color_3_label"
+				          android:textColor = "@color/color_2"
+				          android:layout_weight = "1" />
+				<LinearLayout android:orientation = "vertical"
+				              android:layout_width = "30dp"
+				              android:layout_height = "30dp"
+				              android:layout_marginRight = "15dp"
+				              android:gravity = "center_vertical|center_horizontal"
+				              android:background = "@color/color_4" >
+					<LinearLayout android:orientation = "vertical"
+					              android:layout_width = "24dp"
+					              android:layout_height = "24dp"
+					              android:background = "@color/color_3"
+					              android:id = "@+id/settings_theme_color_3" />
+				</LinearLayout>
+				<RadioButton android:layout_width = "wrap_content"
+				             android:layout_height = "wrap_content"
+				             android:id = "@+id/settings_theme_color_3_radio_button"
+				             android:button = "@null"
+				             android:background = "@drawable/radio_button_style" />
+			</LinearLayout>
+			<LinearLayout android:orientation = "horizontal"
+			              android:layout_width = "fill_parent"
+			              android:layout_height = "wrap_content"
+			              android:layout_marginTop = "15dp"
+			              android:gravity = "bottom"
+			              android:id = "@+id/linearLayout8" >
+				<TextView android:layout_width = "0dp"
+				          android:layout_height = "wrap_content"
+				          android:text = "Color 4"
+				          android:id = "@+id/settings_theme_color_4_label"
+				          android:textColor = "@color/color_2"
+				          android:layout_weight = "1" />
+				<LinearLayout android:orientation = "vertical"
+				              android:layout_width = "30dp"
+				              android:layout_height = "30dp"
+				              android:layout_marginRight = "15dp"
+				              android:gravity = "center_vertical|center_horizontal"
+				              android:background = "@color/color_4" >
+					<LinearLayout android:orientation = "vertical"
+					              android:layout_width = "24dp"
+					              android:layout_height = "24dp"
+					              android:background = "@color/color_4"
+					              android:id = "@+id/settings_theme_color_4" />
+				</LinearLayout>
+				<RadioButton android:layout_width = "wrap_content"
+				             android:layout_height = "wrap_content"
+				             android:id = "@+id/settings_theme_color_4_radio_button"
+				             android:button = "@null"
+				             android:background = "@drawable/radio_button_style" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation = "vertical"
+				android:layout_width = "fill_parent"
+				android:layout_height = "230dp"
+				android:layout_marginTop = "15dp"
+				android:gravity = "center_horizontal"
+				android:id = "@+id/settings_theme_color_picker_layout">
+			</LinearLayout>
+			<LinearLayout
+				android:orientation = "horizontal"
+				android:layout_width = "fill_parent"
+				android:layout_height = "wrap_content"
+				android:layout_marginTop = "15dp"
+				android:gravity = "center_horizontal">
+				<TextView
+					android:layout_width = "wrap_content"
+					android:layout_height = "wrap_content"
+					android:text = "Restore Default Theme"
+					android:id = "@+id/settings_theme_restore_to_default_button"
+					android:textColor = "@color/color_4"
+					android:background = "@drawable/button" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
